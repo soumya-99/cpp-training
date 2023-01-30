@@ -12,18 +12,18 @@ void increase_price(double& price) { price *= 1.5; }
 void greet(const string& name) { cout << "Hello " << name; }
 
 int main(int argc, char const* argv[]) {
-  // string name = full_name("Soumyadeep", "Mondal");
-  // cout << name;
+    // string name = full_name("Soumyadeep", "Mondal");
+    // cout << name;
 
-  // int max = find_max(10, 20);
-  // cout << max;
+    // int max = find_max(10, 20);
+    // cout << max;
 
-  //   double price = 100;
-  //   increase_price(price);
-  //   cout << price;
+    //   double price = 100;
+    //   increase_price(price);
+    //   cout << price;
 
-  string name = "Soumyadeep";
-  greet(name);
+    string name = "Soumyadeep";
+    greet(name);
 
-  return 0;
+    return 0;
 }

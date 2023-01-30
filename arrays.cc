@@ -1,24 +1,42 @@
 #include <iostream>
 
-using std::cin;
+using std::boolalpha;
 using std::cout;
 using std::endl;
-using std::getline;
-using std::string;
+using std::size;
 
 int main(int argc, char const *argv[]) {
-  // int arr[] = {10, 30};
-  // // std::cout << arr[5] << std::endl;
-  // cout << arr;
-  string names[3];
+    // int arr[] = {5, 4, 1, 78, 6};
 
-  cout << "Enter 1st: ";
-  getline(cin, names[0]);
-  cout << "Enter 2nd: ";
-  getline(cin, names[1]);
-  cout << "Enter 3rd: ";
-  getline(cin, names[2]);
+    // for (int i = 0; i < size(arr); i++) {
+    //   cout << arr[i] << endl;
+    // }
 
-  cout << "1st name is: " << names[0] << endl;
-  return 0;
+    // cout << size(arr) << endl;
+
+    // array copy
+    // int arr2[size(arr)];
+    // for (int i = 0; i < size(arr); i++) {
+    //   arr2[i] = arr[i];
+    // }
+
+    // for (auto i : arr2) {
+    //   cout << i << endl;
+    // }
+
+    // array compare
+    int arr1[] = {1, 2, 3, 4, 5};
+    int arr2[] = {1, 2, 3, 4, 5};
+
+    bool equal = true;
+    for (int i = 0; i < size(arr1); i++) {
+        if (arr1[i] != arr2[i] or size(arr1) != size(arr2)) {
+            equal = false;
+            break;
+        }
+    }
+
+    cout << boolalpha << equal << endl;
+
+    return 0;
 }
