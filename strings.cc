@@ -33,14 +33,19 @@ int main(int argc, char const *argv[]) {
     // cout << std::boolalpha << name.empty() << endl;
     // cout << name;
 
-    string name = "Soumyadeep";
-    name.insert(0, "Mr. ");
-    cout << name << endl;
+    string name = "Soum,yadeep";
+    // name.insert(0, "Mr. ");
+    // cout << name << endl;
 
-    name.erase(0, 6);
-    cout << name << endl;
+    // name.erase(0, 6);
+    // cout << name << endl;
 
-    name.replace(0, 3, "SOU");
-    cout << name << endl;
+    // name.replace(0, 3, "SOU");
+    // cout << name << endl;
+
+    cout << name.find('o', 0) << endl;
+    cout << name.rfind('e') << endl;
+    cout << name.find_first_of(",") << endl;
+
     return 0;
 }
