@@ -25,20 +25,31 @@ std::ostream& operator<<(std::ostream& stream, const Movie& movie) {
     return stream;
 }
 
+Movie get_movie() {
+    return {"Her", 2013};
+}
+
+void show_movie(Movie* movie) {
+    std::cout << *movie;
+}
+
 int main(int argc, char const* argv[]) {
-    std::vector<Movie> movies;
+    // std::vector<Movie> movies;
 
-    movies.push_back({"The Revenant", {2015, 12, 25}});
-    movies.push_back({"The Revenant", {2015, 12, 25}});
-    movies.push_back({"Pather Panchali", {1955, 8, 19}});
+    // movies.push_back({"The Revenant", {2015, 12, 25}});
+    // movies.push_back({"The Revenant", {2015, 12, 25}});
+    // movies.push_back({"Pather Panchali", {1955, 8, 19}});
 
-    for (const auto& movie : movies) {
-        std::cout << movie.title << " (" << movie.release_date.year << ")" << std::endl;
-    }
+    // for (const auto& movie : movies) {
+    //     std::cout << movie.title << " (" << movie.release_date.year << ")" << std::endl;
+    // }
 
-    std::cout << (movies[0] == movies[1]) << std::endl;
+    // std::cout << (movies[0] == movies[1]) << std::endl;
 
-    std::cout << movies[0];
+    // std::cout << movies[0];
+
+    auto movie = get_movie();
+    show_movie(&movie);
 
     return 0;
 }
