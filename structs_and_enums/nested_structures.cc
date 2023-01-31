@@ -11,11 +11,19 @@ struct Movie {
     std::string title;
     Date release_date;
     bool is_popular = true;
-
-    bool equals(const Movie& movie) {
-        return title == movie.title && release_date.year == movie.release_date.year && release_date.month == movie.release_date.month && release_date.day == movie.release_date.day;
-    }
 };
+
+bool operator==(const Movie& first, const Movie& second) {
+    return first.title == second.title &&
+           first.release_date.year == second.release_date.year &&
+           first.release_date.month == second.release_date.month &&
+           first.release_date.day == second.release_date.day;
+}
+
+std::ostream& operator<<(std::ostream& stream, const Movie& movie) {
+    stream << movie.title << " (" << movie.release_date.year << ")" << std::endl;
+    return stream;
+}
 
 int main(int argc, char const* argv[]) {
     std::vector<Movie> movies;
@@ -28,7 +36,9 @@ int main(int argc, char const* argv[]) {
         std::cout << movie.title << " (" << movie.release_date.year << ")" << std::endl;
     }
 
-    std::cout << movies[0].equals(movies[1]) << std::endl;
+    std::cout << (movies[0] == movies[1]) << std::endl;
+
+    std::cout << movies[0];
 
     return 0;
 }

@@ -1,4 +1,6 @@
 #include <iostream>
+#include <future>
+#include <thread>
 
 struct Movie {
     std::string title;
@@ -7,7 +9,6 @@ struct Movie {
 };
 
 int main(int argc, char const *argv[]) {
-    
     Movie movie;
     movie.title = "The Godfather";
     movie.release_year = 1972;
