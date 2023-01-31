@@ -30,7 +30,9 @@ Movie get_movie() {
 }
 
 void show_movie(Movie* movie) {
-    std::cout << *movie;
+    // std::cout << (*movie).title; // * priority is high, so that is why we need to use () to make sure that . is evaluated first
+
+    std::cout << movie->title; // structure poiner operator / dereference operator exactly same as (*movie).title
 }
 
 int main(int argc, char const* argv[]) {
