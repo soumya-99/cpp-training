@@ -1,2 +1,6 @@
-.vscode
+settings.json
+launch.json
+cpp_properties.json
+cpp_properties_win32.json
+cpp_properties_win64.json
 *.exe
