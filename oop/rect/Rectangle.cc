@@ -32,3 +32,9 @@ void Rectangle::set_height(int height) {
         throw invalid_argument("height");
     this->height = height;
 }
+
+Rectangle::Rectangle(int width, int height) {
+    cout << "Rectangle constructor called..." << endl;
+    set_width(width);
+    set_height(height);
+}

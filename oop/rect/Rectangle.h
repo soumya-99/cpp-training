@@ -9,6 +9,7 @@ class Rectangle {
     int height;
 
    public:
+   Rectangle(int width, int height);
     void draw();
     int get_area();
     int get_width();
