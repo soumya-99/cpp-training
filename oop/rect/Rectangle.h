@@ -13,6 +13,7 @@ class Rectangle {
 
    public:
     Rectangle() = default;
+    Rectangle(const Rectangle& source) = delete;
     Rectangle(int width, int height);
     Rectangle(int width, int height, const std::string& color);
     void draw();
