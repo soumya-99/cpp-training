@@ -38,3 +38,8 @@ Rectangle::Rectangle(int width, int height) {
     set_width(width);
     set_height(height);
 }
+
+Rectangle::Rectangle(int width, int height, const string& color) : Rectangle(width, height) {
+    cout << "Constructing rect with color." << endl;
+    this->color = color;
+}

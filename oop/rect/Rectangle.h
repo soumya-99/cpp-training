@@ -3,14 +3,18 @@
 
 #pragma once
 
+#include <string>
+
 class Rectangle {
    private:
     int width;
     int height;
+    std::string color;
 
    public:
     Rectangle() = default;
     Rectangle(int width, int height);
+    Rectangle(int width, int height, const std::string& color);
     void draw();
     int get_area();
     int get_width();
