@@ -11,3 +11,6 @@ string TextBox::get_value() {
 void TextBox::set_value(const string& value) {
     this->value = value;
 }
+
+TextBox::TextBox(const string& value) : value {value} {
+}
