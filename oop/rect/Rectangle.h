@@ -15,7 +15,8 @@ class Rectangle {
     Rectangle() = default;
     Rectangle(const Rectangle& source) = delete;
     Rectangle(int width, int height);
-    Rectangle(int width, int height, const std::string& color);
+    // Rectangle(int width, int height, const std::string& color);
+    ~Rectangle();
     void draw();
     int get_area();
     int get_width();
