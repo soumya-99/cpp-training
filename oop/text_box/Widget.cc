@@ -2,13 +2,6 @@
 
 #include <iostream>
 
-Widget::Widget(bool enabled) : enabled{enabled} {
-    std::cout << "Widget Constructor" << std::endl;
-}
-
-Widget::~Widget() {
-}
-
 void Widget::enable() {
     enabled = true;
 }

@@ -9,8 +9,8 @@
 
 class TextBox : public Widget {
    public:
-    using Widget::Widget;
-    explicit TextBox(bool enabled, const std::string& value);
+    TextBox() = default;
+    explicit TextBox(const std::string& value);
     std::string get_value();
     void set_value(const std::string& value);
 

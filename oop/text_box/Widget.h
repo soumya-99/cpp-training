@@ -5,10 +5,6 @@
 
 class Widget {
    public:
-    // Widget() = default;
-    Widget(bool enabled);
-    ~Widget();
-
     void enable();
     void disable();
     bool isEnabled() const;

@@ -12,5 +12,5 @@ void TextBox::set_value(const string& value) {
     this->value = value;
 }
 
-TextBox::TextBox(bool enabled, const string& value) : Widget(enabled), value{value} {
+TextBox::TextBox(const string& value) : value{value} {
 }
