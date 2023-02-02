@@ -4,8 +4,8 @@
 
 using namespace std;
 
-void show_widget(Widget& w) {
-    w.disable();
+void show_widget(const Widget& widget) {
+    widget.draw();
 }
 
 int main(int argc, char const* argv[]) {

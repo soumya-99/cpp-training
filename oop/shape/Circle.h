@@ -7,9 +7,7 @@
 
 class Circle : public Shape {
    public:
-    Circle();
-    ~Circle();
-
+      void draw() const override;
    private:
 };
 

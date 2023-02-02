@@ -7,8 +7,7 @@
 
 class Rectangle : public Shape {
    public:
-    Rectangle();
-    ~Rectangle();
+      void draw() const override;
 
    private:
 };

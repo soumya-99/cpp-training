@@ -1,13 +1,7 @@
 #include "Shape.h"
+#include <iostream>
 
-Shape::Shape()
-{
-
-}
-
-Shape::~Shape()
-{
-
+void Shape::draw() const {
 }
 
 std::string Shape::get_background() const {

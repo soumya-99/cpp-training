@@ -2,6 +2,10 @@
 
 #include <iostream>
 
+void Widget::draw() const {
+    std::cout << "Drawing a widget" << std::endl;
+}
+
 void Widget::enable() {
     enabled = true;
 }

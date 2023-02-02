@@ -4,6 +4,10 @@
 
 using namespace std;
 
+void TextBox::draw() const {
+    std::cout << "Drawing a text box" << std::endl;
+}
+
 string TextBox::get_value() {
     return value;
 }
