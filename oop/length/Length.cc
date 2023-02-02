@@ -18,6 +18,11 @@ Length Length::operator+(const Length& other) const {
     return Length{value + other.value};
 }
 
+Length& Length::operator+=(const Length& other) {
+    value += other.value;
+    return *this;
+}
+
 int Length::get_value() const {
     return value;
 }

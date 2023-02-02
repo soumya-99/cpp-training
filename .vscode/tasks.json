@@ -12,8 +12,8 @@
                 // "${workspaceFolder}\\oop\\text_box\\*.cc",
                 // "${workspaceFolder}\\oop\\person\\*.cc",
                 // "${workspaceFolder}\\oop\\smart_pointer\\*.cc",
-                // "${workspaceFolder}\\oop\\length\\*.cc",
-                "${workspaceFolder}\\oop\\point\\*.cc",
+                "${workspaceFolder}\\oop\\length\\*.cc",
+                // "${workspaceFolder}\\oop\\point\\*.cc",
                 "-std=c++23",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
