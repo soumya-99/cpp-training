@@ -15,6 +15,7 @@ class Length {
     bool operator==(const Length& other) const;
     bool operator==(int other) const;
     std::strong_ordering operator<=>(const Length& other) const;
+    Length operator+(const Length& other) const;
 
     int get_value() const;
     void set_value(int value);
@@ -22,9 +23,9 @@ class Length {
    private:
     int value;
     int x;
-    friend std::ostream& operator<<(std::ostream& stream, const Length& length);
 };
 
+std::ostream& operator<<(std::ostream& stream, const Length& length);
 std::istream& operator>>(std::istream& stream, Length& length);
 
 #endif

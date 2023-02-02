@@ -14,6 +14,10 @@ bool Length::operator==(int other) const {
     return value == other;
 }
 
+Length Length::operator+(const Length& other) const {
+    return Length{value + other.value};
+}
+
 int Length::get_value() const {
     return value;
 }
@@ -28,7 +32,6 @@ std::strong_ordering Length::operator<=>(const Length& other) const {
 
 std::ostream& operator<<(std::ostream& stream, const Length& length) {
     stream << length.get_value();
-    length.x; // can access because of friend declaration
     return stream;
 }
 

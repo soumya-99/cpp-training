@@ -5,12 +5,10 @@
 using namespace std;
 
 int main(int argc, char const* argv[]) {
-    Length length{10};
+    Length first {12};
+    Length second {25};
 
-    cout << "Length: ";
-    cin >> length;
-
-    cout << length << endl;
+    cout << (first + second) << endl;
 
     return 0;
 }

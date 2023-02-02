@@ -9,5 +9,6 @@ int main(int argc, char const *argv[]) {
     Point p2 {10, 30};
 
     cout << p1 << ", " << p2 << endl;
+    cout << "Addition: " << (p1 + p2) << endl;
     return 0;
 }

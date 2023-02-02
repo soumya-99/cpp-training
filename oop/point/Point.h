@@ -11,6 +11,8 @@ class Point {
     ~Point();
 
     bool operator==(const Point& other) const;
+    Point operator+(const Point& other) const;
+    Point operator+(int other) const;
 
     int get_x() const;
     void set_x(int x);
