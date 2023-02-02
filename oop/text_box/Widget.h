@@ -5,7 +5,8 @@
 
 class Widget {
    public:
-    Widget();
+    // Widget() = default;
+    Widget(bool enabled);
     ~Widget();
 
     void enable();

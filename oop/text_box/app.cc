@@ -5,7 +5,7 @@
 using namespace std;
 
 int main(int argc, char const* argv[]) {
-    Widget widget;
+    TextBox box{true, "Hello World!"};
 
     return 0;
 }
