@@ -5,12 +5,11 @@
 using namespace std;
 
 int main(int argc, char const* argv[]) {
-    Length first {12};
-    Length second {25};
+    Length first {10};
+    // Length second = ++first;
+    Length second = first++;
 
-    first += second;
-
-    cout << (first + second) << endl;
+    cout << first << ", " << second << endl;
 
     return 0;
 }

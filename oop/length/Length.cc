@@ -1,4 +1,5 @@
 #include "Length.h"
+#include <iostream>
 
 Length::Length(int value) : value{value} {
 }
@@ -21,6 +22,17 @@ Length Length::operator+(const Length& other) const {
 Length& Length::operator+=(const Length& other) {
     value += other.value;
     return *this;
+}
+
+Length& Length::operator++() { // [prefix]
+    value++;
+    return *this;
+}
+
+Length Length::operator++(int) { // [postfix]
+    Length copy = *this;
+    operator++();
+    return copy;
 }
 
 int Length::get_value() const {

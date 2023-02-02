@@ -10,6 +10,7 @@
 class Length {
    public:
     explicit Length(int value);
+    Length() = default;
     ~Length();
 
     bool operator==(const Length& other) const;
@@ -17,6 +18,8 @@ class Length {
     std::strong_ordering operator<=>(const Length& other) const;
     Length operator+(const Length& other) const;
     Length& operator+=(const Length& other);
+    Length& operator++(); // prefix
+    Length operator++(int); // postfix
 
     int get_value() const;
     void set_value(int value);

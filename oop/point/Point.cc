@@ -18,6 +18,18 @@ Point Point::operator+(int other) const {
     return Point{x + other, y + other};
 }
 
+Point& Point::operator++() {
+    x++;
+    y++;
+    return *this;
+}
+
+Point Point::operator++(int) {
+    Point copy = *this;
+    operator++();
+    return copy;
+}
+
 int Point::get_x() const {
     return x;
 }
