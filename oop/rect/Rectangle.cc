@@ -34,6 +34,7 @@ void Rectangle::set_height(int height) {
 }
 
 Rectangle::Rectangle(int width, int height) {
+    objects_count++;
     cout << "Rectangle constructor called..." << endl;
     set_width(width);
     set_height(height);
@@ -46,4 +47,10 @@ Rectangle::Rectangle(int width, int height) {
 
 Rectangle::~Rectangle() {
     cout << "Rectangle Destructor called..." << endl;
+}
+
+int Rectangle::objects_count = 0;
+
+int Rectangle::get_objects_count() {
+    return objects_count;
 }

@@ -10,6 +10,7 @@ class Rectangle {
     int width;
     int height;
     std::string color;
+    static int objects_count;
 
    public:
     Rectangle() = default;
@@ -23,6 +24,8 @@ class Rectangle {
     void set_width(int width);
     int get_height();
     void set_height(int height);
+
+    static int get_objects_count();
 };
 
 #endif
