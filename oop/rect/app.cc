@@ -1,4 +1,5 @@
 #include <iostream>
+#include <memory>
 
 #include "Rectangle.h"
 
@@ -8,8 +9,10 @@ void show_rectangle(Rectangle& rect) {
 }
 
 int main(int argc, char const* argv[]) {
-    const Rectangle rect1;
-    rect1.draw();
+    // auto* rect = new Rectangle(10, 20);
+    auto rect = make_unique<Rectangle>(10, 20);
+    
+    rect->draw();
 
     cout << Rectangle::get_objects_count() << endl;
 

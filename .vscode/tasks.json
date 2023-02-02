@@ -8,9 +8,10 @@
                 "-fdiagnostics-color=always",
                 "-g",
                 // "${file}",
-                "${workspaceFolder}\\oop\\rect\\*.cc",
+                // "${workspaceFolder}\\oop\\rect\\*.cc",
                 // "${workspaceFolder}\\oop\\text_box\\*.cc",
                 // "${workspaceFolder}\\oop\\person\\*.cc",
+                "${workspaceFolder}\\oop\\smart_pointer\\*.cc",
                 "-std=c++23",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
