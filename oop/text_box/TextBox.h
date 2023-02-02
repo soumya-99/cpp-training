@@ -4,8 +4,9 @@
 #pragma once
 
 #include <string>
+#include "Widget.h"
 
-class TextBox {
+class TextBox : public Widget {
    public:
     TextBox() = default;
     explicit TextBox(const std::string& value);

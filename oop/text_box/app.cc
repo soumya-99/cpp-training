@@ -4,10 +4,11 @@
 
 using namespace std;
 
-int main(int argc, char const *argv[]) {
+int main(int argc, char const* argv[]) {
     TextBox box;
-    box.set_value("Hello Soumyadeep!");
+    box.disable();
 
-    cout << box.get_value() << endl;
+    cout << box.isEnabled() << endl;
+
     return 0;
 }
