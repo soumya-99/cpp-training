@@ -21,9 +21,10 @@ class Length {
 
    private:
     int value;
+    int x;
+    friend std::ostream& operator<<(std::ostream& stream, const Length& length);
 };
 
-std::ostream& operator<<(std::ostream& stream, const Length& length);
 std::istream& operator>>(std::istream& stream, Length& length);
 
 #endif
