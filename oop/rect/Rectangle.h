@@ -10,6 +10,7 @@ class Rectangle {
     int width;
     int height;
     std::string color;
+    
     static int objects_count;
 
    public:
@@ -18,11 +19,13 @@ class Rectangle {
     Rectangle(int width, int height);
     // Rectangle(int width, int height, const std::string& color);
     ~Rectangle();
-    void draw();
-    int get_area();
-    int get_width();
+
+    void draw() const;
+    int get_area() const;
+    int get_width() const;
+    int get_height() const;
+
     void set_width(int width);
-    int get_height();
     void set_height(int height);
 
     static int get_objects_count();

@@ -4,16 +4,16 @@
 
 using namespace std;
 
-void Rectangle::draw() {
+void Rectangle::draw() const {
     cout << "Drawing a rectangle..." << endl;
     cout << "Dimensions: " << width << "x" << height << endl;
 }
 
-int Rectangle::get_area() {
+int Rectangle::get_area() const {
     return width * height;
 }
 
-int Rectangle::get_width() {
+int Rectangle::get_width() const {
     return width;
 }
 
@@ -23,7 +23,7 @@ void Rectangle::set_width(int width) {
     this->width = width;
 }
 
-int Rectangle::get_height() {
+int Rectangle::get_height() const {
     return height;
 }
 

@@ -8,10 +8,8 @@ void show_rectangle(Rectangle& rect) {
 }
 
 int main(int argc, char const* argv[]) {
-    Rectangle rect1 {10, 20};
-    Rectangle rect2 {10, 20};
-    // Rectangle rect2 = rect1;
-    // show_rectangle(rect1);
+    const Rectangle rect1;
+    rect1.draw();
 
     cout << Rectangle::get_objects_count() << endl;
 
