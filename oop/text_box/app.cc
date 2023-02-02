@@ -1,5 +1,6 @@
 #include <iostream>
-
+#include <vector>
+#include <memory>
 #include "TextBox.h"
 #include "Checkbox.h"
 
@@ -10,11 +11,15 @@ void show_widget(const Widget& widget) {
 }
 
 int main(int argc, char const* argv[]) {
-    TextBox box;
-    show_widget(box);
+    // static or early binding
+    // dynamic or late binding
+    vector<unique_ptr<Widget>> widgets;
+    widgets.push_back(make_unique<TextBox>());
+    widgets.push_back(make_unique<Checkbox>());
 
-    Checkbox check_box;
-    show_widget(check_box);
+    for (const auto& widget : widgets) {
+        widget->draw();
+    }
 
     return 0;
 }
