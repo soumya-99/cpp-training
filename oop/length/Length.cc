@@ -30,3 +30,10 @@ std::ostream& operator<<(std::ostream& stream, const Length& length) {
     stream << length.get_value();
     return stream;
 }
+
+std::istream& operator>>(std::istream& stream, Length& length) {
+    int value;
+    stream >> value;
+    length.set_value(value);
+    return stream;
+}

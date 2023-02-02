@@ -5,6 +5,7 @@
 
 #include <compare>
 #include <ostream>
+#include <istream>
 
 class Length {
    public:
@@ -23,5 +24,6 @@ class Length {
 };
 
 std::ostream& operator<<(std::ostream& stream, const Length& length);
+std::istream& operator>>(std::istream& stream, Length& length);
 
 #endif
