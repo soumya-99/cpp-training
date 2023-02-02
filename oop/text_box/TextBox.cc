@@ -4,8 +4,12 @@
 
 using namespace std;
 
+TextBox::~TextBox() {
+    cout << "TextBox destructor" << endl;
+}
+
 void TextBox::draw() const {
-    std::cout << "Drawing a text box" << std::endl;
+    cout << "Drawing a text box" << endl;
 }
 
 string TextBox::get_value() {

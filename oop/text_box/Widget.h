@@ -5,7 +5,8 @@
 
 class Widget {
    public:
-    virtual void draw() const; // dynamic binding
+    virtual ~Widget() = default;
+    virtual void draw() const;  // dynamic binding
     void enable();
     void disable();
     bool isEnabled() const;

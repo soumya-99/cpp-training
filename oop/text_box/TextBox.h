@@ -9,6 +9,7 @@
 
 class TextBox : public Widget {
    public:
+   ~TextBox();
     // overriding draw() from Widget
     void draw() const override;
     std::string get_value();
