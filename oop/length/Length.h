@@ -20,6 +20,8 @@ class Length {
     Length& operator+=(const Length& other);
     Length& operator++(); // prefix
     Length operator++(int); // postfix
+    // operator int() const; // cast operator (implicit)
+    explicit operator int() const; // cast operator (explicit)
 
     int get_value() const;
     void set_value(int value);

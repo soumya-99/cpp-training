@@ -5,11 +5,11 @@
 using namespace std;
 
 int main(int argc, char const* argv[]) {
-    Length first {10};
-    // Length second = ++first;
-    Length second = first++;
+    Length first{10};
 
-    cout << first << ", " << second << endl;
+    int x = static_cast<int>(first);
+
+    cout << first << endl;
 
     return 0;
 }

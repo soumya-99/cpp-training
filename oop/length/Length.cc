@@ -35,6 +35,10 @@ Length Length::operator++(int) { // [postfix]
     return copy;
 }
 
+Length::operator int() const {
+    return value;
+}
+
 int Length::get_value() const {
     return value;
 }
