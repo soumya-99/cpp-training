@@ -7,9 +7,9 @@
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                // "${file}",
+                "${file}",
                 // "${workspaceFolder}\\oop\\rect\\*.cc",
-                "${workspaceFolder}\\oop\\text_box\\*.cc",
+                // "${workspaceFolder}\\oop\\text_box\\*.cc",
                 // "${workspaceFolder}\\oop\\person\\*.cc",
                 // "${workspaceFolder}\\oop\\smart_pointer\\*.cc",
                 // "${workspaceFolder}\\oop\\length\\*.cc",
