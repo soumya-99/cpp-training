@@ -1,5 +1,5 @@
-#include <iostream>
 #include <cmath>
+#include <iostream>
 
 using namespace std;
 
@@ -8,8 +8,7 @@ double fibonacci(int index) {
     return round(pow(phi, index) / sqrt(5));
 }
 
-int main(int argc, char const *argv[])
-{
+int main(int argc, char const *argv[]) {
     double fibo = fibonacci(8);
     cout << "Fibonacci: " << fibo << endl;
     return 0;
