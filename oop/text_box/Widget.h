@@ -6,7 +6,7 @@
 class Widget {
    public:
     virtual ~Widget() = default;
-    // Pure virtual method: Now the whole class becomes abstract
+    // adding =0 Pure virtual method: Now the whole class becomes abstract
     virtual void draw() const = 0;  // dynamic binding
     void enable();
     void disable();
