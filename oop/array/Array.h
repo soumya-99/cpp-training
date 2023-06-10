@@ -5,9 +5,8 @@
 
 #include <cstddef>
 
-class Array
-{
-public:
+class Array {
+   public:
     explicit Array(size_t size);
     ~Array();
 
@@ -15,7 +14,7 @@ public:
 
     int& operator[](size_t index);
 
-private:
+   private:
     int* data;
     size_t size;
 };
