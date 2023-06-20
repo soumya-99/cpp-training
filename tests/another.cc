@@ -1,17 +1,19 @@
-#include <bits/stdc++.h>
+#include <algorithm>
+#include <array>
+#include <iostream>
 
 using namespace std;
 
-ostream& operator<<(ostream& os, const vector<int>& v) {
-    for (auto i : v) {
-        os << i << " ";
-    }
-    return os;
-}
+int main() {
+    array<int, 5> arr = {1, 2, 3, 4, 5};
 
-int main(int argc, char const* argv[]) {
-    vector<int> v = {1, 2, 3, 4, 5};
-    cout << v << endl;
+    // cube every elemennt with lambda
+    for_each(arr.begin(), arr.end(), [](int a) {
+        cout << a * a * a << " ";
+    });
 
+    // [](int a) -> int {
+    //     return a * a * a;
+    // };
     return 0;
 }

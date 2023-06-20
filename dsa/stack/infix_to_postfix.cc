@@ -31,7 +31,7 @@ int precedence(char c) {
  * @param s type: string infix expression
  * @return postfix expression
  */
-string infix_to_postfix(string s) {
+inline string infix_to_postfix(string s) {
     stack<char> st;
     string res;
     for (char c : s) {
