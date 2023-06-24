@@ -2,6 +2,7 @@
 
 using std::cout;
 using std::endl;
+using std::ostream;
 
 class ListNode {
    public:
@@ -55,14 +56,24 @@ class LinkedList {
         }
     }
 
-    void print() {
-        ListNode* curr = head->next;
-        while (curr) {
-            cout << curr->val_ << " -> ";
-            curr = curr->next;
-        }
-        cout << endl;
+    // void print() {
+    //     ListNode* curr = head->next;
+    //     while (curr) {
+    //         cout << curr->val_ << " -> ";
+    //         curr = curr->next;
+    //     }
+    //     cout << endl;
+    // }
+};
+
+ostream& operator<<(ostream& os, const LinkedList& list) {
+    ListNode* curr = list.head->next;
+    while (curr != nullptr) {
+        os << curr->val_ << " -> ";
+        curr = curr->next;
     }
+    os << endl;
+    return os;
 };
 
 int main() {
@@ -72,20 +83,26 @@ int main() {
     list.insertEnd(3);
     list.insertEnd(4);
     list.insertEnd(5);
-    list.print();
+    // list.print();
+    cout << list;
 
     list.remove(2);
-    list.print();
+    // list.print();
+    cout << list;
 
     list.remove(0);
-    list.print();
+    // list.print();
+    cout << list;
 
     list.remove(2);
-    list.print();
+    // list.print();
+    cout << list;
 
     list.remove(0);
-    list.print();
-    list.print();
+    // list.print();
+    // list.print();
+    cout << list;
+    cout << list;
 
     return 0;
 }
