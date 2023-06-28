@@ -35,6 +35,7 @@ class LinkedList {
             delete temp;
             temp = nullptr;
         }
+        cout << "List deleted\n";
     }
 
     void insertEnd(int val) {

@@ -33,9 +33,20 @@
 //     return 0;
 // }
 
+void swap(int* a, int* b) {
+    int* temp = a;
+    a = b;
+    b = temp;
+}
+
 int main(void) {
     char c[] = "ICRBCSIT17";
     char* p = c;
-    printf("%s", c + 2 [p] - 6 [p] - 1);
+    printf("%s\n", c + 2 [p] - 6 [p] - 1);
+
+    int x = 23;
+    int y = 32;
+    swap(&x, &y);
+    printf("%d %d", x, y);
     return 0;
 }
