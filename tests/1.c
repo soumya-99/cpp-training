@@ -51,16 +51,43 @@
 //     return 0;
 // }
 
-void xyz(int p1, int* p2) {
-    ++p1;
-    ++*p2;
-    printf("%d%d", p1, *p2);
-}
+// void xyz(int p1, int* p2) {
+//     ++p1;
+//     ++*p2;
+//     printf("%d%d", p1, *p2);
+// }
+
+// int main() {
+//     int a = 10;
+//     xyz(a++, ++*(&a));
+//     xyz(a++, ++*(&a));
+//     printf("%d", a);
+//     return 0;
+// }
+
+// #include "stdio.h"
+// int main()
+// {
+//  int a = 10;
+//  int b = 15;
+
+//  printf("=%d",(a+1),(b=a+2));
+//  printf(" %d=",b);
+
+//  return 0;
+// }
 
 int main() {
     int a = 10;
-    xyz(a++, ++*(&a));
-    xyz(a++, ++*(&a));
-    printf("%d", a);
+
+    printf("=%d %d=", (a + 1));
+    int i;
+    for (i < 10; i = 0 ; i++) // (i)<br>
+    for (i < 10; i++ ; i = 0) // (ii)<br>
+    for (i = 0; i < 10 ; i++) // (iii)<br>
+    for (i = 0; i++ ; i < 10) // (iv)<br>
+    for (i++; i = 0 ; i < 10) // (v)<br>
+    for (i++; i < 0 ; i = 10) // (vi)<br>
     return 0;
+    
 }
