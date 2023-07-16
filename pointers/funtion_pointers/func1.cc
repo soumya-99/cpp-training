@@ -22,5 +22,7 @@ int main() {
     int arr[] = {10, 5, 15, 12, 90, 80};
     qsort(arr, size(arr), sizeof(int), compare);
 
+    // ranges::sort(arr); // C++20
+
     cout << "Sorted array: " << arr << endl;
 }
