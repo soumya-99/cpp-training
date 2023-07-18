@@ -1,33 +1,23 @@
-#include <algorithm>
-#include <iostream>
-#include <list>
-#include <vector>
+#include <bits/stdc++.h>
 
 using namespace std;
 
-// Inp: a, b, c, 1, 2, 3
-// Out: a, 1, b, 2, c, 3
-
-ostream& operator<<(ostream& o, list<char>& ll) {
-    cout << "[";
-    for (char i : ll)
-        o << i << ", ";
-    cout << "\b\b]";
-    return o;
-}
-
-list<char>& couple(list<char>& l_chars, list<int>& l_nums) {
-    
-}
+typedef class Node {
+    public:
+        int data;
+        Node* next;
+} Node;
 
 int main() {
-    list<char> list_of_chars = {'a', 'b', 'c'};
-    list<int> list_of_nums = {1, 2, 3};
+    Node* head = nullptr;
+    Node* second = nullptr;
+    Node* third = nullptr;
 
-    list<char> received_list = couple(list_of_chars, list_of_nums);
+    head = new Node();
+    second = new Node();
+    third = new Node();
 
-
-
-    cout << received_list;
+    head->data = 1;
+    head->next = second;
     return 0;
 }

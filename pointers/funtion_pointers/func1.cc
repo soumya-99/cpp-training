@@ -1,5 +1,5 @@
-#include<iostream>
-#include<algorithm>
+#include <iostream>
+#include <algorithm>
 
 using namespace std;
 
@@ -25,4 +25,6 @@ int main() {
     // ranges::sort(arr); // C++20
 
     cout << "Sorted array: " << arr << endl;
+
+    return 0;
 }

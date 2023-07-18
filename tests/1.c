@@ -77,17 +77,33 @@
 //  return 0;
 // }
 
-int main() {
-    int a = 10;
+// int main() {
+//     int a = 10;
 
-    printf("=%d %d=", (a + 1));
-    int i;
-    for (i < 10; i = 0 ; i++) // (i)<br>
-    for (i < 10; i++ ; i = 0) // (ii)<br>
-    for (i = 0; i < 10 ; i++) // (iii)<br>
-    for (i = 0; i++ ; i < 10) // (iv)<br>
-    for (i++; i = 0 ; i < 10) // (v)<br>
-    for (i++; i < 0 ; i = 10) // (vi)<br>
+//     printf("=%d %d=", (a + 1));
+//     int i;
+//     for (i < 10; i = 0 ; i++) // (i)<br>
+//     for (i < 10; i++ ; i = 0) // (ii)<br>
+//     for (i = 0; i < 10 ; i++) // (iii)<br>
+//     for (i = 0; i++ ; i < 10) // (iv)<br>
+//     for (i++; i = 0 ; i < 10) // (v)<br>
+//     for (i++; i < 0 ; i = 10) // (vi)<br>
+//     return 0;
+// }
+
+// int main() {
+//     printf("Soumya");
+//     main();
+//     return 0;
+// }
+
+int main() {
+    typedef int INT, *INTPTR, ONEDARR[10], TWODARR[10][10];
+    int (*p)[5];
+    printf("%d", p);
+
+    int a = 10, b = 20, c = 20, d = 90;
+    d = (a > b) ? (b = 40) : (c = 30);
+
     return 0;
-    
 }
